@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">recodeZalo</string>
+    <string name="register"><u>Register a new account</u></string>
 </resources>

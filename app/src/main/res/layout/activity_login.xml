@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:alignItems="center"
+    app:flexDirection="column"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        app:layout_flexBasisPercent="60%"
+        android:src="@drawable/login_image"
+        android:scaleType="fitStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        app:layout_flexBasisPercent="20%"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:text="LOGIN"
+            android:src="@drawable/btn_login"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="LOGIN"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        app:layout_flexBasisPercent="10%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/register"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:autoLink="all"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/register"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_flexBasisPercent="10%"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Tiếng Việt "
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="- English -"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=" Giun dế"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.google.android.flexbox.FlexboxLayout>
